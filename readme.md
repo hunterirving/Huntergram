@@ -1,7 +1,7 @@
 # Huntergram
 Huntergram is a free photo-sharing site that you host yourself.<br>It's written in pure HTML, raw CSS, and vanilla JavaScript.
 
-<img src="readme_images/huntergram.jpg">
+<img src="readme_images/huntergram.png">
 
 ## features
 * a strictly finite information feed, curated by you
@@ -9,10 +9,10 @@ Huntergram is a free photo-sharing site that you host yourself.<br>It's written 
 * a responsive design that scales to fit desktop and mobile web browsers
 * "functioning" "like", "follow", and "message" buttons
 * a ragged leading edge that lets you add new photos in amounts that are not necessarily multiples of three without shifting your existing photos around relative to one another
-  * <img src="ragged_leading_edge.jpg">
+  * <img src="ragged_leading_edge.png">
   * this "ensurance of stability" lets you arrange photos spacially
     * the resulting bricolage can be used to share context or recontextualize images based on their proximity to others
-    * <img src="readme_images/collage.jpg">
+    * <img src="readme_images/collage.png">
     * <a href="https://addyosmani.com/blog/lazy-loading/">lazily-loaded images</a> ensure the site loads quickly regardless of how many pictures you add
 
 ## bring your own workflow
@@ -29,7 +29,7 @@ Huntergram is a free photo-sharing site that you host yourself.<br>It's written 
   * using Gimp's export preview, use the slider to find an appropriate balance between quality and filesize
       * for 1200x1200-ish images, you can usually go down to around 100kB to 200kB without a serious dip in visual quality
 * using my computer's file browser, mock up and select from potential photo arrangements
-  * <img src="readme_images/finder.jpg">
+  * <img src="readme_images/finder.png">
 * open index.html in Vim
   * if a new row needs to be added...
     * copy the conveniently-placed, commented out "row" div
@@ -49,4 +49,4 @@ Huntergram is a free photo-sharing site that you host yourself.<br>It's written 
 * the photos displayed at <a href="https://hunterirving.com/huntergram">hunterirving.com/huntergram</a> are taken by me
 * the example photos included in this repository and on the GitHub pages live demo are royalty-free images provided by <a href="https://unsplash.com/photos/5DIFvVwe6wk">Linus Sandvide</a>, <a href="https://unsplash.com/photos/aFMsnhkZoJg">Griffin Wooldridge</a>, <a href="https://unsplash.com/photos/gmy25xvSkq8">Aaron Burden</a>, <a href="https://unsplash.com/photos/oCZHIa1D4EU">Jase Bloor</a>, <a href="https://unsplash.com/photos/EOc0OgfHecs">Helen Ngoc N.</a>, <a href="https://unsplash.com/photos/GSCtoEEqntQ">Ralph Howald</a>, <a href="https://unsplash.com/photos/rgcJWAxaubg">Edward Howell</a>, <a            href="https://unsplash.com/photos/m0brfG9nMPs">Arsalan Arianmehr</a>, <a href="https://unsplash.com/photos/Mn3lkbSQRLY">Daniel Lincoln</a>, <a href="https://unsplash.com/photos/alY6_OpdwRQ">Jezael Melgoza</a>, <a href="https://     unsplash.com/photos/EfqQLK5T_lE">Rafael Hoyos Weht</a>, <a href="https://unsplash.com/photos/PpKla8Qtv8c">Karsten Winegeart</a>, <a href="https://unsplash.com/photos/lJ6iASrFAnQ">Kenny Eliason</a>, and <a href="https://unsplash.com/photos/9P2-bzjvIHk">Dawid Zawiła</a>.
 
-PS: you can change the "Hunter" in Huntergram to be your name if you want to :^)
+PS: you can change the "Hunter" in Huntergram to your name if you want to :-)
