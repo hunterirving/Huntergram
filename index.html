@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<html lang="en">
+	<head>
+		<!-- disable zoom on mobile? !-->
+		<meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+		<!-- set page title !-->
+		<title>Huntergram</title>
+		<!-- import css !-->
+		<link rel="stylesheet" type="text/css" href="">
+		<link rel="stylesheet" type="text/css" href="huntergram.css">
+		<!-- import js !-->
+		<script type="text/javascript" src="huntergram.js"></script>
+	</head>
+	<body>
+		<div id="big_image_container">
+			<img id="big_image" onclick="toggleLike()">
+			<img id="heart" src="resources/filled_heart.svg">
+			<img src="resources/empty_heart.svg" style="display:none">
+		</div>
+		<div id="cover_sheet">
+		</div>
+		<div id="page_container" class="centered noselect" style="position:relative">
+			<div id="disappearing_border">
+				<div id="huntergram_logo_container"
+					onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">
+					<img src="resources/huntergram_logo_white_text.svg" id="huntergram_logo">
+				</div>
+				<div id="bio_container">
+					<img id="profile_pic" src="resources/profile_pic.jpg">
+					<div id="inner_bio_container">
+						<!-- Your Name Here !-->
+						<h2 id="username">hunter</h2>
+						<img id="verified_icon" src="resources/verified_icon.svg">
+						<div id="buttons">
+							<div id="message_button" class="button" onclick="message();">
+								Message
+							</div>
+							<div id="follow_button" class="button" onclick="incrementFollowerCount();">
+								Follow
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="description_container">
+					<div id="description">
+						<!-- About You !-->
+						a human from earth
+						<br>
+						<!-- Your Web Site Here !-->
+						<a href="https://hunterirving.com">hunterirving.com</a>
+					</div>
+				</div>
+				<div id="stats_container">
+					<div id="follows" class="stats">
+						<p>Follows<br><b>69</b></p>	
+					</div>
+					<div id="followed_by" class="stats">
+						<p>Followed by<br><b><span id="follower_count">420</span></b></p>
+					</div>
+					<div id="posts" class="stats">
+						<p>Posts<br><b><span>666</span></b></p>
+					</div>
+				</div>
+				<div id="content_container">
+
+					<!--
+					<div class="row">
+						<div class="content">
+							<img src="content/.jpg" loading="lazy">
+						</div>
+						<div class="content">
+							<img src="content/.jpg" loading="lazy">
+						</div>
+						<div class="content">
+							<img src="content/.jpg" loading="lazy">
+						</div>
+					</div>
+					!-->
+
+					<div class="row">
+						<div class="content">
+							<img src="content/prometheus.jpg" loading="lazy">
+						</div>
+						<div class="content">
+							<img src="content/owl.jpg" loading="lazy">
+						</div>
+						<div class="content">
+							<img src="content/moon.jpg" loading="lazy">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="content">
+							<img src="content/tunnel.jpg" loading="lazy">
+						</div>
+						<div class="content">
+							<img src="content/lantern.jpg" loading="lazy">
+						</div>
+						<div class="content">
+							<img src="content/gone_fishin.jpg" loading="lazy">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="content">
+							<img src="content/ruins.jpg" loading="lazy">
+						</div>
+						<div class="content">
+							<img src="content/cat.jpg" loading="lazy">
+						</div>
+						<div class="content">
+							<img src="content/swamp.jpg" loading="lazy">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="content">
+							<img src="content/outside.jpg" loading="lazy">
+						</div>
+						<div class="content">
+							<img src="content/tree.jpg" loading="lazy">
+						</div>
+						<div class="content">
+							<img src="content/arcade.jpg" loading="lazy">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="content">
+							<img src="content/tetris.jpg" loading="lazy">
+						</div>
+						<div class="content">
+							<img src="content/balloon.jpg" loading="lazy">
+						</div>
+						<div class="content">
+							<img src="content/flowers.jpg" loading="lazy">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

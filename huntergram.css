@@ -1,0 +1,295 @@
+:root {
+	--pure_black: #000000;
+	--text: #ffffff;
+	--verification_blue: #0094f5;
+	--dark_grey: #262626;
+	--darker_grey: #262626e0;
+	--darkest_grey: #262626d0;
+	--heart_drop-shadow: #FFFFFF42;
+}
+
+#disappearing_border {
+	margin-left: -1px;
+	margin-right: -1px;
+	border-left: 1px solid var(--dark_grey);
+	border-right: 1px solid var(--dark_grey);
+	transition: border-color 0.8s;
+}
+
+.fadeable {
+	transition: filter 0.8s;
+}
+
+.hidden {
+	filter: brightness(0);
+}
+
+.centered {
+	display: block;
+	margin: 0 auto;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.nodecor {
+	text-decoration: none;
+	color: var(--text);
+	transition: color ease-in-out .15s;
+}
+
+html {
+	scroll-behavior:smooth;
+	overscroll-behavior:none;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	text-rendering: optimizeLegibility;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",     "Segoe UI Emoji", "Segoe UI Symbol";
+	color: var(--text);
+	-webkit-tap-highlight-color: transparent;
+	transition: color ease-in-out .15s, background-color ease-in-out .15s;
+
+	max-width: 100%;
+	margin:0px;
+	padding:0px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background-color: var(--pure_black);
+}
+
+#cover_sheet {
+	background-color: var(--pure_black);
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	z-index:2;
+	pointer-events: none;
+	filter: opacity(0);
+}
+
+#page_container {
+	position: relative;
+	height: 100%;
+	max-width: 600px;
+	padding-bottom:0px;
+}
+
+#huntergram_logo_container {
+	position: -webkit-sticky;
+	position: sticky;
+	top:0;
+	width:100%;
+	background-color: var(--pure_black);
+	padding:0;
+	z-index: 1;
+	cursor: pointer;
+}
+
+#huntergram_logo {
+	display:block;
+	margin:0;
+	width: 16%;
+	min-width: 90px;
+	padding-left: 20px;
+	padding-right: 5px;
+	padding-top: 15px;
+	padding-bottom: 17px;
+	shape-rendering: geometricPrecision;
+}
+
+#bio_container {
+	display:flex;
+	justify-content: start;
+	padding-top: 9px;
+	padding-right: 15px;
+	padding-bottom: 19px;
+	padding-left:25px;
+}
+
+#profile_pic {
+	border-radius:50%;
+	width: 75px;
+	height: 75px;
+	margin-right: 25px;
+}
+
+#inner_bio_container {
+	width: 100%;
+}
+
+#username {
+	font-size: 25px;
+	font-weight: 500;
+	display: inline;
+}
+
+#verified_icon {
+	width:15px;
+	display:inline; 
+	padding-left:1px;
+}
+
+.button {
+	height: 30px;
+	line-height: 29px;
+	width: 108px;
+	background-color: var(--dark_grey);
+	border-radius:4px;
+	font-size: 15px;
+	text-align: center;
+	display: inline-block;
+	margin-top: 12px;
+	margin-right: 3px;
+	transition: 0.1s;
+}
+
+.button:hover {
+	cursor: pointer;
+	background-color: var(--darker_grey);
+	transition: background-color .1s;
+}
+
+.button:active {
+	background-color: var(--darkest_grey);
+	transition: background-color 0s;
+}
+
+#follow_button {
+	width: 94px;
+}
+
+#description_container {
+	padding-left: 20px;
+	padding-bottom: 10px;
+	padding-top: 7px;
+}
+
+#description {
+	font-size: 15px;
+	line-height: 20px;
+}
+
+#description > a {
+	color: var(--verification_blue);
+	text-decoration: none;
+}
+
+#description > a:hover {
+	text-decoration: underline;
+}
+
+#stats_container {
+	display:flex;
+	justify-content: start;
+	padding-bottom: 10px;
+}
+
+.stats {
+	width: calc(100%/3);
+	text-align: center;
+}
+
+#content_container {
+	position: relative;
+}
+
+.row {
+	display:flex;
+	justify-content: start;
+}
+
+.content {
+	height: 0;
+	width:calc(100%/3);
+	padding-bottom:calc(100%/3);
+	background-color: var(--pure_black);
+	position: relative;
+}
+
+.content > img {
+	max-width: 100%;
+	transition: filter .3s;
+	display: block;
+}
+
+.content > img:hover {
+	cursor: pointer;
+	transition: filter .2s;
+	filter: brightness(1.05);
+}
+
+.stop-scrolling {
+  overflow: hidden;
+}
+
+#big_image {
+	max-width: 100%;
+	max-height: 100%;
+	display: none;
+	aspect-ratio: 1/1;
+	margin: auto;
+}
+
+#big_image_container {
+	z-index: 3;
+	position: fixed;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	width: 600px;
+	height: 600px;
+	max-width: 100vw;
+	max-height: 100vh;
+	pointer-events: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#heart {
+	position: absolute;
+	width: 30%;
+	filter: opacity(0);
+	pointer-events: none;
+}
+
+.heart_anim {
+	animation: likeFadeA 1.75s;
+}
+
+.alt {
+	animation: likeFadeB 1.75s;
+}
+
+@keyframes likeFadeA {
+	0% {filter: opacity(0) drop-shadow(0 0 3rem var(--heart_drop-shadow))}
+	5% {filter: opacity(1) drop-shadow(0 0 3rem var(--heart_drop-shadow));}
+	20% {filter: opacity(1) drop-shadow(0 0 3rem var(--heart_drop-shadow));}
+	100% {filter: opacity(0) drop-shadow(0 0 3rem var(--heart_drop-shadow));}
+}
+
+@keyframes likeFadeB {
+	0% {filter: opacity(0) drop-shadow(0 0 3rem var(--heart_drop-shadow))}
+	5% {filter: opacity(1) drop-shadow(0 0 3rem var(--heart_drop-shadow));}
+	20% {filter: opacity(1) drop-shadow(0 0 3rem var(--heart_drop-shadow));}
+	100% {filter: opacity(0) drop-shadow(0 0 3rem var(--heart_drop-shadow));}
+}
+
+.no_animation {
+	animation: none !important;
+}
