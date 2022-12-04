@@ -1,7 +1,7 @@
 # Huntergram
 Huntergram is a free photo-sharing site that you host yourself.<br>It's written in pure HTML, raw CSS, and vanilla JavaScript.
 
-<img src="readme_images/huntergram.png">
+<img src="readme_images/huntergram.png" width="50%" height="50%">
 
 ## features
 * a strictly finite information feed, curated by you
@@ -10,10 +10,10 @@ Huntergram is a free photo-sharing site that you host yourself.<br>It's written 
 * "functioning" "like", "follow", and "message" buttons
 * a ragged leading edge that lets you add new photos in amounts that are not necessarily multiples of three without shifting your existing photos around relative to one another
   * <img src="readme_images/ragged_leading_edge.png" width="50%" height="50%">
-  * this "ensurance of stability" lets you arrange photos spacially
+  * this "ensuranced stability" lets you arrange photos spacially
     * the resulting bricolage can be used to share context or recontextualize images based on their proximity to others
     * <img src="readme_images/collage.png" width="50%" height="50%">
-    * <a href="https://addyosmani.com/blog/lazy-loading/">lazily-loaded images</a> ensure the site loads quickly regardless of how many pictures you add
+* <a href="https://addyosmani.com/blog/lazy-loading/">lazily-loaded images</a> ensure the site loads quickly regardless of how many pictures you add
 
 ## bring your own workflow
 * Huntergram's source code just renders a website
