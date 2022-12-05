@@ -42,7 +42,7 @@ Huntergram is a free photo-sharing site that you host yourself.<br>It's written 
       * an example script, strip_metadata.py, is provided, which uses exiftool to strip all metadata from all images in the /huntergram directory
 
 ## a simple spell, but quite unbreakable
-* huntergram.js includes a <a href="https://en.wikipedia.org/wiki/ROT13">rot13</a> encoder/decoder
+* huntergram.js includes a <a href="https://en.wikipedia.org/wiki/ROT13">rot13</a> encoder-decoder
   * you can use this to obfuscate your email address enough that bots won't bother finding it, while retaining the ability   to be contacted
 
 ## attribution
