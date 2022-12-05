@@ -13,7 +13,7 @@ Huntergram is a free photo-sharing site that you host yourself.<br>It's written 
   * this "ensured stability" lets you arrange photos spacially
     * the resulting bricolage can be used to share context or recontextualize images based on their proximity to others
     * <img src="readme_images/collage.png" width="50%" height="50%">
-* <a href="https://www.youtube.com/watch?v=ZBvvCdhLKdw&t=42s">lazily-loaded images</a> ensure the site loads quickly regardless of how many pictures you add
+* <a href="https://www.youtube.com/watch?v=ZBvvCdhLKdw">lazily-loaded images</a> ensure the site loads quickly regardless of how many pictures you add
 
 ## bring your own workflow
 * Huntergram's source code just renders a website
