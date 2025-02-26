@@ -1,5 +1,5 @@
 # Huntergram
-Huntergram is a free photo-sharing site that you host yourself.<br>It's written in pure HTML, raw CSS, and vanilla JavaScript.
+Huntergram is a free photo sharing site that you host yourself.<br>It's written in pure HTML, raw CSS, and vanilla JavaScript.
 
 <a href="https://hunterirving.github.io/Huntergram/"><img src="readme_images/huntergram.png" width="50%" height="50%"></a>
 
